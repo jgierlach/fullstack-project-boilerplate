@@ -1,14 +1,15 @@
-# Jerabith Mclint's fullstack project boilerplate
+# Fullstack project boilerplate
 
-## components, stores, and base.css
+## Components, stores, base.css, and utils.js
 
-For ease of reference using $lib/path shorthand the components and stores folders along with base.css file are placed under the lib directory
+For ease of reference using $lib/path shorthand the components and stores folders along with base.css and utils.js files are placed under the lib directory
 
 ## Environment variable instructions
 
 Out of the box this project is configured to work with Supabase.com. Create a .env at the root of this project and create the following environment variables
 
 PUBLIC_SUPABASE_URL='Your projects supabase url'
+
 PUBLIC_SUPABASE_ANON_KEY='Your projects supabase anon key'
 
 # create-svelte
