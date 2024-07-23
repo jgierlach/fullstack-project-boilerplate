@@ -9,7 +9,7 @@
 
 <div class="flex min-h-screen flex-col">
   <Navbar />
-  <div class="flex-grow">
+  <div>
     <slot />
   </div>
   <Footer />
@@ -21,9 +21,5 @@
     margin: 0;
     padding: 0;
     height: 100%;
-  }
-
-  .flex-grow {
-    padding-bottom: 2.5rem; /* Adjust if the Footer height changes */
   }
 </style>

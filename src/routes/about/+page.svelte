@@ -5,11 +5,11 @@
   // Import components
   import Navbar from '$lib/components/Navbar.svelte'
 
-  // Import stores
-  import { testStore, loadTestStore } from '$lib/stores/test'
-
   // Import utility functions
   import { test } from '$lib/utils'
+
+  // Import stores
+  import { testStore, loadTestStore } from '$lib/stores/test'
 
   // Execute onMount
   onMount(() => {
