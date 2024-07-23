@@ -8,6 +8,9 @@
   // Import utility functions
   import { test } from '$lib/utils'
 
+  // Import props
+  export let data
+
   // Import stores
   import { testStore, loadTestStore } from '$lib/stores/test'
 

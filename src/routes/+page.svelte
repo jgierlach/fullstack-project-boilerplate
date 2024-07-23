@@ -1,28 +1,16 @@
 <script>
-  // Import svelte specific functions
-  import { onMount } from 'svelte'
-
-  // Import components
-  import Navbar from '$lib/components/Navbar.svelte'
-
-  // Import utility functions
-  import { test } from '$lib/utils'
-
-  // Import stores
-  import { testStore, loadTestStore } from '$lib/stores/test'
-
-  // Execute onMount
-  onMount(() => {
-    loadTestStore()
-  })
-
-  // Component specific variables and business logic
+  export let data
 </script>
 
-<div class="hero min-h-screen bg-base-200">
-  <div class="hero-content text-center">
-    <div class="max-w-md">
-      <h1 class="text-5xl font-bold">Home Page</h1>
-    </div>
-  </div>
-</div>
+<section class="container mx-auto mt-6">
+  {#if data.session}
+    <h1 class="text-center text-2xl font-bold">
+      You are logged in as {data.session.user.email}. Go to
+      <a href="/app" class="text-blue-500 underline">app</a>
+    </h1>
+  {:else}
+    <h1 class="text-center text-2xl font-bold">
+      You are not <a href="/login" class="text-blue-500 underline">Logged in</a>
+    </h1>
+  {/if}
+</section>
