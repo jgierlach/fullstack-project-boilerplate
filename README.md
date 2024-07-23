@@ -1,5 +1,11 @@
 # Fullstack Project Boilerplate
 
+## Tech Stack
+
+- [SvelteKit](https://kit.svelte.dev/)
+- [Daisy UI](https://daisyui.com/)
+- [Supabase](https://supabase.com/)
+
 ## Components, stores, base.css, and utils.js
 
 For ease of reference using $lib/path shorthand the components and stores folders along with base.css and utils.js files are placed under the lib directory
